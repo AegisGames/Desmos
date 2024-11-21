@@ -9,11 +9,7 @@
     font-family: "Caesar Dressing";
 }
 
-section {
-    /* just to show position fixed working */
-    height: 2000px;
-    margin: 0;
-  }
+
 
 section::before{
     content: "";
