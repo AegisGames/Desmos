@@ -189,12 +189,13 @@ label{
 
 @media (max-width: 560px){
     .content .info h2{
-        font-size: 35px;
-        line-height: 40px;
+        margin: 200px 1px;
+        font-size: 30px;
+        
     }
 
     .content .info h2 span{
-        font-size: 30px;
+        font-size: 100px;
         font-weight: 600;
     }
 
