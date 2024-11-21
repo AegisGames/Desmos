@@ -9,17 +9,28 @@
     font-family: "Caesar Dressing";
 }
 
-section{
-    position: relative;
+section {
+    /* just to show position fixed working */
+    height: 2000px;
+    margin: 0;
+  }
+
+section::before{
+    content: "";
+    position: fixed;
     width: 100%;
-    min-height: 100vh;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background: url(images/bg.png)no-repeat;
+    background-image: url(images/bg.png);
     background-size: cover;
-    background-position: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: -1;
+  opacity: 0.5;
 }
+
 
 header{
     position: relative;
@@ -29,6 +40,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 header .logo{
@@ -42,8 +54,9 @@ header .logo{
 }
 
 header .navigation a{
-    color: #000;
+    color: #000000;
     text-decoration: none;
+    font-size: 25px;
     font-weight: 500;
     letter-spacing: 1px;
     padding: 5px 15px;
@@ -57,7 +70,8 @@ header .navigation a:not(:last-child){
 }
 
 header .navigation a:hover{
-    background: rgb(192, 92, 16);
+    background: rgb(211, 81, 64);
+    color: #fff;
 }
 
 .content{
@@ -70,20 +84,21 @@ header .navigation a:hover{
     font-size: 55px;
     font-weight: 800;
     letter-spacing: 2px;
-    line-height: 60px;
+    line-height: 100px;
     margin-bottom: 30px;
 }
 
 .content .info h2 span{
-    color: rgb(192, 92, 16);
-    font-size: 80px;
+    color: rgb(211, 81, 64);
+    font-size: 180px;
     font-weight: 800;
 }
 
 .content .info p{
-    font-size: 16px;
+    font-size: 30px;
     font-weight: 500;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+
 }
 
 .content .info-btn{
@@ -101,7 +116,7 @@ header .navigation a:hover{
 }
 
 .content .info-btn:hover{
-    background: rgb(192, 92, 16);
+    background: rgb(211, 81, 64);
 }
 
 
@@ -126,7 +141,7 @@ label{
         transition-property: color;
     }
     label:hover{
-        color: #fff;
+        color: rgb(211, 81, 64);
     }
 
     label .close-btn{
@@ -192,13 +207,13 @@ label{
     
     .content{
         max-width: 650px;
-        margin: 60px 50px;
+        margin: 60px 30px;
     }
 
     .content .info h2{
         margin-top: 150px;
         font-size: 40px;
-
+        line-height: 70px;
     }
 
     .content .info h2 span{
@@ -208,9 +223,9 @@ label{
     }
 
     .content .info p{
-        font-size: 23px;
-        margin-bottom: 130px;
-        margin-top: 100px;
+        font-size: 19px;
+        margin-bottom: 70px;
+        margin-top: 30px;
     }
     .content .info a{
         margin: 8px 50px;
