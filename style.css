@@ -33,7 +33,7 @@ header{
 
 header .logo{
     position: relative;
-    color: #000;
+    color: #000000;
     font-size: 30px;
     text-decoration: none;
     text-transform: uppercase;
@@ -46,8 +46,8 @@ header .navigation a{
     text-decoration: none;
     font-weight: 500;
     letter-spacing: 1px;
-    padding: 890px 15px;
-    border-radius: 20px;
+    padding: 5px 15px;
+    border-radius: 10px;
     transition: 0,3s;
     transition-property: background;
 }
@@ -92,10 +92,10 @@ header .navigation a:hover{
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 20px;
     letter-spacing: 2px;
-    padding: 20px 40px;
-    border-radius: 30px;
+    font-size: 30px;
+    padding: 20px 30px;
+    border-radius: 20px;
     transition: 0,3s;
     transition-property: background;
 }
@@ -209,11 +209,11 @@ label{
 
     .content .info p{
         font-size: 23px;
-        margin-bottom: 190px;
+        margin-bottom: 130px;
         margin-top: 100px;
     }
     .content .info a{
-        margin: 5px 55px;
+        margin: 8px 50px;
         }
 
     
