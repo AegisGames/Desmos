@@ -10,7 +10,6 @@
 }
 
 
-
 section::before{
     content: "";
     position: fixed;
@@ -109,7 +108,6 @@ header .navigation a:hover{
 .content .info-btn:hover{
     background: rgb(211, 81, 64);
 }
-
 
 label{
     display: none;
