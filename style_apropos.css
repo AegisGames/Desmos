@@ -179,11 +179,11 @@ label{
     
     .content{
         max-width: 650px;
-        margin: 60px 30px;
+        margin: 0px 30px;
     }
 
     .logo{
-        width: 170px;
+        width: 140px;
         height: auto;
         
     }
@@ -193,15 +193,13 @@ label{
         line-height: 70px;
     }
 
-
-
     .content .info p{
         font-size: 19px;
         margin-bottom: 70px;
-        margin-top: px;
+        margin-top: 0px;
     }
     .content .info a{
-        margin: 8px 50px;
+        margin: 0px 50px;
         }
 
     
