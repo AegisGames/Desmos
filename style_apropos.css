@@ -161,6 +161,20 @@ label{
     color: #fff;
 }
 
+.footer .icons {
+    padding: 20px;
+}
+
+.footer .icons a{
+    color: #fff;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.footer .icons a:hover{
+    color: rgb(211, 81, 64);
+}
+
 @media (max-width: 720px){
     header .navigation{
         display: none;
