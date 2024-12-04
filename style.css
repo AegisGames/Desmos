@@ -65,11 +65,22 @@ header .navigation a:hover{
 }
 
 .content{
-    max-width: 650px;
-    margin: 0px 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    gap: 0px;
+    margin: 6px 100px;
+}
+
+.content .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
 .content .info h2{
+    align-self: baseline;
     color: rgb(0, 0, 0);
     font-size: 55px;
     font-weight: 800;
@@ -85,18 +96,21 @@ header .navigation a:hover{
 }
 
 .content .info p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 900;
     margin-bottom: 50px;
 
 } 
 
 .content .info-btn{
+    display: flex;
+    align-items: center;
     color: #fff;
     background: #000;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 900;
     letter-spacing: 2px;
     font-size: 30px;
     padding: 20px 30px;
@@ -104,6 +118,7 @@ header .navigation a:hover{
     transition: 0,3s;
     transition-property: background;
 }
+
 
 .content .info-btn:hover{
     background: rgb(211, 81, 64);
@@ -117,6 +132,55 @@ label{
     z-index: 3;
     display: none;
 }
+
+.actualite{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.actualite h2{
+    font-size: 80px;
+}
+
+.actualite .actu{
+    display: flex;
+    flex-direction: row;
+}
+
+.musi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.musi a{
+    padding: 30px;
+    font-size: 30px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.musi a:hover{
+    background: rgb(211, 81, 64);
+}
+
+.footer{
+    display: flex;
+    padding: 50px;
+    background-color: #1d1d1d;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer h2{
+    color: #fff;
+}
+
 
 @media (max-width: 720px){
     header .navigation{
@@ -219,6 +283,4 @@ label{
     .content .info a{
         margin: 8px 50px;
         }
-
-    
 }
