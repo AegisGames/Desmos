@@ -119,8 +119,8 @@ header .navigation a:hover{
     align-items: center;
     background: rgb(129, 145, 218);
     color: #ffffff;
-    width: 150px;
-    padding: 10px 0px;
+    width: 200px;
+    padding: 20px 0px;
     border-radius: 10px;
     margin: 50px;
     transition: 0.5s;
@@ -136,7 +136,7 @@ header .navigation a:hover{
 }
 
 .equipe .row .card:hover{
-    width: 170px;
+    width: 220px;
    ;
 }
 
