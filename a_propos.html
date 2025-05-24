@@ -38,31 +38,55 @@
         <div class="equipe">
             <h1>notre equipe :</h1>
             <div class="row">
-                <div class="card">
-                    <h2>léos</h2>
-                    <img src="images/Capture1.PNG" alt="Capture1">
-                    <p>chef de projet / dev</p>
-                </div>
-                <div class="card">
-                    <h2>dan</h2>
-                    <img src="images/Capture1.PNG" alt="Capture1">
-                    <p>Level designer / dev</p>
-                </div>
-                <div class="card">
-                    <h2>pablo</h2>
-                    <img src="images/Capture1.PNG" alt="Capture1">
-                    <p>developpeur web</p>
-                </div>
-                <div class="card">
-                    <h2>jeanne</h2>
-                    <img src="images/Capture1.PNG" alt="Capture1">
-                    <p>lvl designer/modelisation</p>
-                </div>
-                <div class="card">
-                    <h2>kelyann</h2>
-                    <img src="images/Capture1.PNG" alt="Capture1">
-                    <p>sound designer</p>
-                </div>
+                <div class="card" onclick="replaceCard(this)">
+                    <div class="name">LÉOS</div>
+                    <img src="images/leos.png" alt="Léos">
+                    <div class="role">CHEF DE PROJET / DEV</div>
+                    <div class="replacement-text" >Je m’appelle Léos, j’ai 18 ans, et j’ai commencé à coder assez jeune. En effet, je suis
+                        allé à TUMO, un programme d’apprentissage
+                        de création numérique, où j’ai pu apprendre à
+                        faire plein de choses sur un ordinateur, notamment coder en C sharp.</div>
+                  </div>
+                  
+                  <div class="card" onclick="replaceCard(this)">
+                    <div class="name">DAN</div>
+                    <img src="images/dan.png" alt="Dan">
+                    <div class="role">LEVEL DESIGNER / DEV</div>
+                    <div class="replacement-text" >Je m’appelle Dan, j’ai 18 ans et je suis étudiant
+                        à l’EPITA. Depuis mon plus jeune âge, grâce
+                        à mes frères, je suis passionné par les jeux vidéo. Cette passion m’a naturellement conduit
+                        à m’intéresser à leur création et au travail qui
+                        se cache derrière.</div>
+                  </div>
+                  
+                  <div class="card" onclick="replaceCard(this)">
+                    <div class="name">PABLO</div>
+                    <img src="images/palbo.png" alt="Pablo">
+                    <div class="role">DÉVELOPPEUR WEB</div>
+                    <div class="replacement-text" >Je m’apelle Pablo, je suis issu d’une Terminale
+                        avec pour spécialités NSI et Mathématiques et
+                        je suis très impatient de commencer ce projet
+                        qui va me permettre de m’initier à la programmation de jeu vidéo.</div>
+                  </div>
+                  
+                  <div class="card" onclick="replaceCard(this)">
+                    <div class="name">JEANNE</div>
+                    <img src="images/jeanne.png" alt="Jeanne">
+                    <div class="role">LVL DESIGNER/MODÉLISATION</div>
+                    <div class="replacement-text" >Je suis la seule fille du groupe, et même si je
+                        n’ai pas suivi la spécialité NSI en terminale,
+                        cela ne m’a jamais freinée dans mon envie d’apprendre la programmation à mon rythme.</div>
+                  </div>
+                  
+                  <div class="card" onclick="replaceCard(this)">
+                    <div class="name">KELYANN</div>
+                    <img src="images/kellya.png" alt="Kelyann">
+                    <div class="role">SOUND DESIGNER</div>
+                    <div class="replacement-text" >Kelyann Houandi est né le 28 février 2006. Dès
+                        son plus jeune âge, il a montré un vif intérêt pour les nouvelles technologies, une passion
+                        nourrie par son frère aîné, qui est développeur
+                        d’applications.</div>
+                  </div>
             </div>
         </div>
         <div class="footer">
@@ -74,5 +98,11 @@
             </div>
         </div>
     </section>
+    
+    <script>
+        function replaceCard(card) {
+          card.classList.toggle('clicked');
+        }
+      </script>
 </body>
 </html>

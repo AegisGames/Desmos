@@ -109,6 +109,14 @@ header .navigation a:hover{
     color: rgb(211, 81, 64);
 }
 
+.role{
+    margin-top: 10px;
+}
+
+.name{
+    padding-bottom: 10px;
+}
+
 .equipe .row{
     display: flex;
 }
@@ -122,9 +130,30 @@ header .navigation a:hover{
     width: 200px;
     padding: 20px 0px;
     border-radius: 10px;
-    margin: 50px;
+    margin: 35px;
     transition: 0.5s;
 }
+
+.card .replacement-text {
+    display: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    
+    
+  }
+  
+  .card.clicked .name,
+  .card.clicked img,
+  .card.clicked .role {
+    display: none;
+  }
+  
+  .card.clicked .replacement-text {
+    display: block;
+  }
+
 
 .equipe .row .card h2{
     color: #ffffffef;
@@ -135,10 +164,6 @@ header .navigation a:hover{
     max-width: 100%;
 }
 
-.equipe .row .card:hover{
-    width: 220px;
-   ;
-}
 
 label{
     display: none;

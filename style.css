@@ -150,6 +150,29 @@ label{
     flex-direction: row;
 }
 
+.actu {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.actu img {
+    width: 400px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    
+}
+.actu img:hover {
+    transform: scale(1.03);
+}
+
+
 .musi{
     display: flex;
     flex-direction: column;
