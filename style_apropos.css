@@ -24,7 +24,7 @@ section::before{
     background-repeat: no-repeat;
     background-position: center center;
     z-index: -1;
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 
@@ -45,7 +45,7 @@ header{
 }
 
 header .navigation a{
-    color: #000000;
+    color: rgb(50,58,88);
     text-decoration: none;
     font-size: 25px;
     font-weight: 900;
@@ -93,14 +93,28 @@ header .navigation a:hover{
     font-weight: 900;
     margin-bottom: 50px;
     margin-top: 60px;
-
+    color: rgb(50,58,88);
 }
+
+
+@keyframes appear {
+    from {
+      opacity: 0;
+      clip-path: inset(100% 100% 0 0);
+    }
+    to {
+      opacity: 1;
+      clip-path: inset(0 0 0 0);
+    }
+  }
 
 .equipe{
     display: flex;
     flex-direction: column;
     align-items: center;
     color: rgb(0, 0, 0);
+    margin-top: 120px;
+    margin-bottom: 40px;
     
 }
 
@@ -125,8 +139,9 @@ header .navigation a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: rgb(129, 145, 218);
+    background: rgb(50,58,88);
     color: #ffffff;
+    font-weight: 500;
     width: 200px;
     padding: 20px 0px;
     border-radius: 10px;
@@ -174,10 +189,13 @@ label{
     display: none;
 }
 
+
+
+
 .footer{
     display: flex;
     padding: 50px;
-    background-color: #1d1d1d;
+    background-color: rgb(50,58,88);
     flex-direction: column;
     align-items: center;
 }

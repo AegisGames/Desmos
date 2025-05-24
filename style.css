@@ -23,7 +23,7 @@ section::before{
   background-repeat: no-repeat;
   background-position: center center;
   z-index: -1;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 
@@ -44,7 +44,7 @@ header{
 }
 
 header .navigation a{
-    color: #1d1d1d;
+    color: rgb(50,58,88);
     text-decoration: none;
     font-size: 25px;
     font-weight: 900;
@@ -82,12 +82,12 @@ header .navigation a:hover{
 .content .info h2{
     align-self: baseline;
     font-family: "Caesar Dressing";
-    color: #1d1d1d;
+    color: rgb(50,58,88);
     font-size: 55px;
     font-weight: 800;
     letter-spacing: 2px;
     line-height: 100px;
-    margin-bottom: 0px;
+    margin-bottom: 40px;
 }
 
 .content .info h2 span{
@@ -100,21 +100,21 @@ header .navigation a:hover{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
     font-weight: 900;
-    margin-bottom: 50px;
-    
+    margin-bottom: 100px;
+    color: rgb(50,58,88);
 } 
 
 .content .info .info-btn{
     display: flex;
     align-items: center;
     color: #fff;
-    background: #1d1d1d;
+    background: rgb(50,58,88);
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: 2px;
     font-size: 30px;
-    padding: 20px 30px;
+    padding: 30px 40px;
     border-radius: 20px;
     transition: 0,3s;
     transition-property: background;
@@ -136,6 +136,7 @@ label{
 
 .actualite{
     margin-top: 100px;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -143,6 +144,8 @@ label{
 
 .actualite h2{
     font-size: 80px;
+    color: rgb(50,58,88);
+    margin-bottom: 50px;
 }
 
 .actualite .actu{
@@ -151,12 +154,23 @@ label{
 }
 
 .actu {
+    
     display: flex;
     flex-direction: row;
     gap: 50px;
     justify-content: center;
     flex-wrap: wrap;
     margin: 40px 0;
+}
+
+.actu:nth-child(2){
+    transition-delay: 200ms;
+}
+.actu:nth-child(3){
+    transition-delay: 300ms;
+}
+.actu:nth-child(4){
+    transition-delay: 400ms;
 }
 
 .actu img {
@@ -173,6 +187,20 @@ label{
 }
 
 
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+
 .musi{
     display: flex;
     flex-direction: column;
@@ -183,8 +211,8 @@ label{
     padding: 30px;
     font-size: 30px;
     border-radius: 20px;
-    margin-bottom: 50px;
-    background-color: #1d1d1d;
+    margin-bottom: 100px;
+    background-color: rgb(50,58,88);
     color: #ffffff;
     text-decoration: none;
 }
@@ -193,10 +221,12 @@ label{
     background: rgb(211, 81, 64);
 }
 
+
+
 .footer{
     display: flex;
     padding: 50px;
-    background-color: #1d1d1d;
+    background-color:rgb(50,58,88);
     flex-direction: column;
     align-items: center;
 }
