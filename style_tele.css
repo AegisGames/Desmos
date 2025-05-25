@@ -336,21 +336,76 @@ label{
 
 }
 
-@media (max-width: 560px){
+@media (max-width: 520px) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
 
-    .logo{
-        width: 170px;
+    .logo {
+        width: 140px;
         height: auto;
     }
-    
-    .content{
-        max-width: 650px;
-        margin: 120px 140px;
+
+    .content {
+        padding: 40px 20px;
+        margin: 0 auto;
+        flex-direction: column;
     }
 
-    .content .info h2{
-        font-size: 150px;
-        line-height: 70px;
+    .content .info h2 {
+        font-size: 40px;
+        line-height: 50px;
     }
 
-}
+    .tel-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .tel-row a {
+        min-width: unset;
+        width: 100%;
+        font-size: 22px;
+        padding: 20px;
+    }
+
+    .progress-text {
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .timeline, .labels {
+        width: 90%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .dot {
+        width: 25px;
+        height: 25px;
+    }
+
+    .labels span {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .description {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .description h2 {
+        font-size: 20px;
+    }
+
+    .description p {
+        font-size: 14px;
+    }
+
+    .description img {
+        max-width: 100%;
+        height: auto;
+    }
