@@ -370,31 +370,38 @@ label{
         padding: 20px;
     }
 
-    .progress-text {
-        font-size: 28px;
-        text-align: center;
+    .timeline-wrapper .progress-text {
+        display: block !important;
+        font-size: 30px;
         margin-bottom: 30px;
-    }
-
-    .timeline, .labels {
-        width: 90%;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
-    .dot {
-        width: 25px;
-        height: 25px;
-    }
-
-    .labels span {
-        font-size: 12px;
+        color: rgb(50,58,88);
+        font-weight: 800;
         text-align: center;
     }
+
+    /* Masquer les autres éléments */
+    .timeline,
+    .labels {
+        display: none !important;
+    }
+
+
 
     .description {
         width: 90%;
         padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .description .desc {
+        display: block !important;
+    }
+
+    .description .desc.hidden {
+        display: block !important;
+        margin-bottom: 30px;
     }
 
     .description h2 {
@@ -409,3 +416,4 @@ label{
         max-width: 100%;
         height: auto;
     }
+}
