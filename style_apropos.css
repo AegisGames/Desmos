@@ -296,7 +296,7 @@ label{
 @media (max-width: 560px){
     
     .content{
-        max-width: 650px;
+        max-width: 700px;
         margin: 0px 30px;
     }
 
@@ -307,8 +307,8 @@ label{
     }
 
     .content .info h2{
-        font-size: 40px;
-        line-height: 70px;
+        font-size: 50px;
+        line-height: 60px;
     }
 
     .content .info p{

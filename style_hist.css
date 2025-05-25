@@ -308,7 +308,7 @@ label{
 }
 
 @media (max-width: 560px){
-    
+
     .content{
         max-width: 650px;
         margin: 0px 30px;
@@ -316,26 +316,54 @@ label{
 
     .logo{
         width: 140px;
+        
         height: auto;
     }
 
     .content .info h2{
         font-size: 40px;
-        line-height: 70px;
+        line-height: 60px;
     }
 
     .content .info h2 span{
         position: relative;
-        font-size: 100px;
+        font-size: 54px;
         font-weight: 600;
+        
+    }
+    @media (max-width: 520px) {
+
+    * {
+        animation: none !important;
+        transition: none !important;
     }
 
-    .content .info p{
-        font-size: 19px;
-        margin-bottom: 50px;
-        margin-top: 0px;
+    .ligne {
+        flex-direction: column !important;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 0 20px;
     }
-    .content .info a{
-        margin: 8px 50px;
-        }
+
+    .ligne img {
+        width: 70%;
+        height: auto;
+    }
+
+    .ligne h1 {
+        font-size: 18px;
+        line-height: 1.5em;
+        font-weight: 600;
+        
+    }
+
+
+    .decou a {
+        padding: 15px 25px;
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+}   
+
 }
