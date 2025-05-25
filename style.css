@@ -307,8 +307,10 @@ label{
   color: rgb(50,58,88); /* Couleur au choix */
 }
 
-    label .menu-btn{
+    label .menu-btn {
         position: absolute;
+        left: -40px; /* décalage vers la gauche */
+        top: 0px;  /* ajuste selon le besoin */
     }
 
 
