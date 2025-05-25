@@ -297,11 +297,15 @@ label{
         display: none;
     }
 
-    #check:checked ~ header label .close-btn{
-        z-index: 2;
-        display: block;
-        position: fixed;
-    }
+    #check:checked ~ header label .close-btn {
+  z-index: 2;
+  display: block;
+  position: fixed;
+  top: 100px;
+  right: 50px; /* 🛠️ Ajuste ici la position horizontale de la croix */
+  font-size: 30px;
+  color: rgb(50,58,88); /* Couleur au choix */
+}
 
     label .menu-btn{
         position: absolute;
@@ -387,5 +391,28 @@ label{
     color: #ffffff;
     text-decoration: none;
 }
+
+header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px; /* Ajuste ici pour rapprocher la position de celle du téléchargement */
+    }
+
+    .logo {
+        width: 140px;
+        height: auto;
+        margin-left: -20px; /* Tu peux aussi essayer margin-left: 10px si nécessaire */
+    }
+
+    label {
+        z-index: 2;
+        position: relative;
+    }
+
+    header h2 {
+        justify-content: flex-start;
+        text-align: left;
+    }
 }
 

@@ -326,12 +326,15 @@ label{
         display: none;
     }
 
-    #check:checked ~ header label .close-btn{
-        z-index: 2;
-        display: block;
-        position: fixed;
-    }
-
+    #check:checked ~ header label .close-btn {
+  z-index: 2;
+  display: block;
+  position: fixed;
+  top: 100px;
+  right: 50px; /* 🛠️ Ajuste ici la position horizontale de la croix */
+  font-size: 30px;
+  color: rgb(50,58,88); /* Couleur au choix */
+}
 
 
 }
@@ -342,10 +345,29 @@ label{
         transition: none !important;
     }
 
-    .logo {
-        width: 140px;
-        height: auto;
-    }
+    header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  header h2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+  }
+
+  .logo {
+    margin: 0;
+    width: 140px;
+  }
+
+  label {
+    position: relative;
+    z-index: 2;
+  }
 
     .content {
         padding: 40px 20px;
