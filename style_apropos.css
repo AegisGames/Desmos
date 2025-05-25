@@ -135,6 +135,10 @@ header .navigation a:hover{
     display: flex;
 }
 
+.equipe .row .card:hover {
+    transform: scale(1.03);
+}
+
 .equipe .row .card{
     display: flex;
     flex-direction: column;
