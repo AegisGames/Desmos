@@ -67,12 +67,14 @@ header .navigation a:hover{
     color: #fff;
 }
 
-.content{
+.content {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 100px 150px;
+    text-align: center; /* ajoute ça si ce n’est pas là */
 }
+
 
 .content .info h2{
     color: rgb(211, 81, 64);
@@ -81,24 +83,28 @@ header .navigation a:hover{
     margin-bottom: 30px;
 }
 
-.content .info .tel{
+.tel-row {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 70px;
+    
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.content .info .tel a{
+.tel-row a {
+    flex: 1; /* force chaque bouton à prendre le même espace */
+    min-width: 200px; /* taille minimale pour les petits écrans */
+    text-align: center;
     padding: 30px;
     font-size: 30px;
     border-radius: 20px;
-    margin-bottom: 100px;
     background-color: rgb(50,58,88);
     color: #ffffff;
     text-decoration: none;
+    transition: background 0.3s ease;
 }
 
-.content .info .tel a:hover{
+.tel-row a:hover {
     background: rgb(211, 81, 64);
 }
 
