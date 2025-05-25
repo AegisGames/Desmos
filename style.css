@@ -358,7 +358,8 @@ label{
         max-width: 90%; /* adapte la largeur à presque tout l'écran */
         margin-left: auto;
         margin-right: auto;
-        font-size: 18px; /* optionnel : réduire un peu la taille pour petits écrans */
+        font-size: 20px; /* optionnel : réduire un peu la taille pour petits écrans */
+        
     }
     .content .info a{
         margin: 8px 50px;
