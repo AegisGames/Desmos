@@ -361,6 +361,7 @@ label{
     .tel-row {
         flex-direction: column;
         gap: 15px;
+        margin-bottom: 20px;
     }
 
     .tel-row a {
@@ -385,14 +386,14 @@ label{
         display: none !important;
     }
 
-
-
     .description {
         width: 90%;
         padding: 10px;
         display: flex;
         flex-direction: column;
         gap: 30px;
+        background: transparent;
+
     }
 
     .description .desc {
